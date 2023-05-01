@@ -1,4 +1,24 @@
 @charset "UTF-8";
+/*Cor principal: #444444 (cinza escuro)
+Tons mais claros:
+#636363 (cinza médio)
+#888888 (cinza claro)
+#BDBDBD (cinza claro acinzentado)
+#EFEFEF (branco cinza claro)*/
+:root{
+    --cor-pricipal:#444444;
+    --cinza-médio:#636363;
+    --cinza-claro:#888888;
+    --cinza-acinzentado:#BDBDBD;
+    --branco-cinza:#EFEFEF;
+
+
+}
+.navbar{
+    background-color: var(--cor-pricipal);
+    color: var(--branco-cinza);
+}
+
 body,html{
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("imagens/imagem\ de\ fundo.jpg");
@@ -10,8 +30,8 @@ main{
     min-width:300px;
     max-width: 1000px;
     margin: auto;
-    background-color:rgb(199, 180, 180);
-    color:rgba(0, 0, 0, 0.575);
+    background-color:var(--cinza-claro);
+    color:black;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.479);
@@ -37,8 +57,7 @@ article>p{
 footer{
     min-width:300px;
     max-width: 1000px;
-    background-color:rgba(102, 63, 63, 0.623);
-    color:black;
+    background-color:var(--cor-pricipal);
     padding:3px;
     margin: 2px auto 1px auto;
 }
@@ -46,6 +65,6 @@ footer>p{
 text-align: center;
 padding-top: 10px;
 margin-bottom: 7px;
-color:rgba(0, 0, 0, 0.575);
+color: var(--cinza-acinzentado);
 font-size: 3vw;
 }
